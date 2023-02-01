@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "App3.Windows": {
+      "commandName": "MsixPackage"
+    }
+  }
+}

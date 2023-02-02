@@ -1,4 +1,9 @@
 ﻿<Project Sdk="MSBuild.Sdk.Extras/3.0.23">
+	<Import Project="..\ReswPlus.0.1.5-alpha\ReswPlus.props" />
+
+	<ItemGroup>
+		<Analyzer Include="..\ReswPlus.0.1.5-alpha\ReswPlusSourceGenerator.dll" />
+	</ItemGroup>
 	<PropertyGroup>
 		<TargetFrameworks>net7.0-windows10.0.18362;net7.0;net7.0-ios;net7.0-maccatalyst;net7.0-android</TargetFrameworks>
 		<!-- Ensures the .xr.xml files are generated in a proper layout folder -->

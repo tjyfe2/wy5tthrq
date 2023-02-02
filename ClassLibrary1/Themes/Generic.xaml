@@ -1,11 +1,11 @@
 <ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:ext="using:ClassLibrary1.MarkupExtensions">
+    xmlns:ext="using:ClassLibrary1.Strings">
 
     <Style TargetType="ToggleSwitch">
-        <Setter Property="OnContent" Value="{ext:StringsExtension Key=ToggleSwitchOn}"/>
-        <Setter Property="OffContent" Value="{ext:StringsExtension Key=ToggleSwitchOff}"/>
+        <Setter Property="OnContent" Value="{ext:ResourcesExtension Key=ToggleSwitchOn}"/>
+        <Setter Property="OffContent" Value="{ext:ResourcesExtension Key=ToggleSwitchOff}"/>
     </Style>
     
     <!-- From https://github.com/morning4coffe-dev/storylines -->
@@ -21,8 +21,8 @@
         <Setter Property="MinWidth" Value="0" />
         <Setter Property="FocusVisualMargin" Value="-7,-3,-7,-3" />
         <Setter Property="CornerRadius" Value="{StaticResource ControlCornerRadius}" />
-        <Setter Property="OnContent" Value="{ext:StringsExtension Key=ToggleSwitchOn}"/>
-        <Setter Property="OffContent" Value="{ext:StringsExtension Key=ToggleSwitchOff}"/>
+        <Setter Property="OnContent" Value="{ext:ResourcesExtension Key=ToggleSwitchOn}"/>
+        <Setter Property="OffContent" Value="{ext:ResourcesExtension Key=ToggleSwitchOff}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="ToggleSwitch">
